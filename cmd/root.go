@@ -93,7 +93,7 @@ func Execute() {
 
 	rootCmd := NewRootCmd()
 	rootCmd.SilenceUsage = true
-	rootCmd.CompletionOptions.DisableDefaultCmd = true
+	rootCmd.CompletionOptions.DisableDefaultCmd = false
 
 	if err := rootCmd.Execute(); err != nil {
 		os.Exit(1)
